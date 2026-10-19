@@ -1,1 +1,40 @@
 .env
+
+
+# Secrets and environment variables
+.env
+.env.*
+!.env.example
+
+# Go binaries and build outputs
+/bin/
+/build/
+/dist/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Test and coverage reports
+coverage.out
+coverage.html
+coverage/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.log
+tmp/
+temp/
