@@ -56,6 +56,7 @@ func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("GET /health", handler.Health)
 	mux.HandleFunc("GET /issues", issueHandler.List)
+	mux.HandleFunc("POST /issues", issueHandler.Create)
 
 	addr := ":" + cfg.ServerPort
 	server := &http.Server{
